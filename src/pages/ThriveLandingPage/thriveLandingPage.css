@@ -9,6 +9,7 @@
   visibility: none;
 }
 
+
 .thr746Prim {
   color: var(--primaryClr);
 }
@@ -88,4 +89,24 @@
   grid-auto-flow: column;
   width: fit-content;
   column-gap: 30px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.thr746FadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-duration: 1.2s;
+  animation-name: fadeInUp;
+  animation-timing-function: ease;
 }

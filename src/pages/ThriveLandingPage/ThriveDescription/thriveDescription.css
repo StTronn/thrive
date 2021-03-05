@@ -64,11 +64,11 @@
   }
 }
 
-.thr746FadeInUp {
+.thr746Desc .thrDesc746FadeInUp {
   -webkit-animation-name: fadeInUp;
-  animation-duration: 2.5s;
+  animation-duration: 1.2s;
   animation-name: fadeInUp;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease;
 }
 
 @-webkit-keyframes fadeIn {
@@ -89,9 +89,9 @@
   }
 }
 
-.thr746FadeIn {
+.thr746Desc .thr746FadeIn {
   -webkit-animation-name: fadeIn;
-  animation-duration: 2.8s;
+  animation-duration: 1.6s;
   animation-name: fadeIn;
   animation-timing-function: ease-in;
 }

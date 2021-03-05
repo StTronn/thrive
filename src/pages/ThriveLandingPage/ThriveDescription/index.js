@@ -1,7 +1,7 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 
-import  Image  from "../../../common/Image";
-import Button  from "../../../ui/Button";
+import Image from "../../../common/Image";
+import Button from "../../../ui/Button";
 
 import ThriveLogo from "../images/thrive-logo.svg";
 import thriveDescHeading from "../images/thriveDescHeading.svg"
@@ -12,11 +12,11 @@ const Description = ({ descRef, getThriveInvite }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([ entry ]) => {
-        if (entry.intersectionRatio >= 0.2)
+      ([entry]) => {
+        if (entry.intersectionRatio > 0.2)
           entry.target.className = `thr746Desc thr746FullScreen`;
       },
-      { threshold: 0.2 }
+      { threshold: [0.2] }
     );
     observer.observe(descRef.current);
     return () => {
@@ -26,7 +26,7 @@ const Description = ({ descRef, getThriveInvite }) => {
 
   return (
     <div className="thr746NotVisible" ref={descRef}>
-      <div className="thr746DescHeading thr746FadeInUp">
+      <div className="thr746DescHeading thrDesc746FadeInUp">
         <Image
           src={thriveDescHeading}
           alt="Learn Evolve Thrive"

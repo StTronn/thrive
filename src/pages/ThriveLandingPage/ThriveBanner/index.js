@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import  Image  from "../../../common/Image";
+import Image from "../../../common/Image";
 
 import headerImage from "../images/thrive-banner.svg";
+import Logo from "../images/logo-light.svg";
+import ThriveVideo from "../images/thrive-front.mp4";
 import ArrowDown from "../images/arrow-down.svg";
 
 import "./thriveBanner.css";
@@ -13,18 +15,20 @@ const Banner = ({
   scrollSpeakers,
   scrollAgenda,
 }) => {
-  const [ showArrow, setShowArrow ] = useState(true);
+  const [showArrow, setShowArrow] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   const bannerRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([ entry ]) => {
+      ([entry]) => {
         if (entry.intersectionRatio < 0.9) setShowArrow(false);
         if (entry.intersectionRatio > 0.9) setShowArrow(true);
       },
-      { threshold: [ 1, 0.85 ] }
+      { threshold: [1, 0.85] }
     );
+    if (bannerRef.current)
     observer.observe(bannerRef.current);
     return () => {
       observer.disconnect();
@@ -35,11 +39,17 @@ const Banner = ({
     scrollDesc();
   };
 
+
   return (
     <div className="thr746Header thr746FullScreen" ref={bannerRef}>
-      <div className="thr746Nav web-align">
-        <Image width={150}  src="//assets-netstorage.groww.in/website-assets/prod/1.4.3/build/client/images/logo-light-groww.1815ad63.svg" alt="logo"/>
-        <div className="thr746BannerSection">
+      {loading && <Loading/>}
+      <video src={ThriveVideo} loop muted autoplay="autoplay"
+        onLoadedData={() => { setLoading(false) }}
+      >
+      </video>
+      <div className="thr746Nav web-align thr746FadeInUp">
+        <Image width={150} src={Logo} alt="logo" />
+        <div className="thr746BannerSection thr746FadeInUp">
           <span onClick={scrollDesc}>ABOUT THRIVE</span>
           <span onClick={scrollSpeakers}>SPEAKERS</span>
           <span onClick={scrollAgenda}>AGENDA</span>
@@ -48,7 +58,7 @@ const Banner = ({
           </span>
         </div>
       </div>
-      <div className="thr746HeaderTitle">
+      <div className="thr746HeaderTitle thr746FadeInUp">
         <Image src={headerImage} alt="thrive header" useLazyLoad={false} />
       </div>
       <div className="thr746ArrowWrapper" onClick={handleArrowClick}>
@@ -63,5 +73,12 @@ const Banner = ({
     </div>
   );
 };
+
+const Loading = () => {
+  return (
+    <div className="thr746Loading">
+    </div>
+  )
+}
 
 export default Banner;
