@@ -1,0 +1,127 @@
+.thrm746NavWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: var(--zindex500);
+}
+
+.thrm746NavWrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--subText20);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  z-index: var(--zindex500);
+}
+
+.thrm746NavVisible .thrm746NavWrapper:after {
+  opacity: 0.5;
+  pointer-events: auto;
+}
+
+.thrm746NavVisible .thrm746NavWrapper{
+  pointer-events: auto;
+}
+
+.thrm746NavTop {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  overflow: visible;
+  background: var(--primaryBg);
+  top: 0;
+  left: 0;
+  display: grid;
+  align-items: center;
+  padding: 0 15px;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  background: var(--constantText120);
+  color: var(--constantWhite);
+  z-index: var(--zindex500);
+}
+
+.thrm746MenuIcon {
+  padding-top: 4px;
+}
+
+.thrm746NavVisible {
+  pointer-events: all;
+}
+
+.thrm746NavVisible .thrm746NavMenu {
+  transform: translateX(0);
+  z-index: var(--zindex900);
+  pointer-events: auto;
+}
+
+
+.thrm746NavMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 200px;
+  transition: transform 0.15s cubic-bezier(0, 1, 0.5, 1);
+  transform: translateX(100%);
+  padding: 10px 15px;
+  background: var(--constantText120);
+  color: var(--constantWhite);
+  z-index: var(--zindex900);
+}
+
+.thrm746NavMenu:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--subText20);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.thrm746NavMenu > div {
+  display: grid;
+  height: fit-content;
+}
+
+.thrm746MenuClose {
+  justify-items: end;
+  padding-left: 10px;
+}
+
+.thrm746MenuSection {
+  row-gap: 20px;
+  margin: 80px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+
+  letter-spacing: 0.21px;
+}
+
+.thrm746MenuInvited {
+  color: var(--primaryClr);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  width: fit-content;
+}

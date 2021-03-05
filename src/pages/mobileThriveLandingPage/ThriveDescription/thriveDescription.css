@@ -1,0 +1,35 @@
+.thrm746Desc {
+  width: 100%;
+}
+
+.thrm746DescHeading {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 21px;
+  padding-top: 80px;
+  text-align: center;
+  padding-bottom: 60px;
+  color: var(--text);
+}
+
+.thrm746DescGrid {
+  display: grid;
+  row-gap: 40px;
+  justify-items: center;
+  width: fit-content;
+}
+
+.thrm746DescBox {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  text-align: left;
+
+  color: var(--text);
+}
+
+.thrm746DescButtonWrapper {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}

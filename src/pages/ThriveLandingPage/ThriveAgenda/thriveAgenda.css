@@ -1,0 +1,109 @@
+.thr746Agenda {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  column-gap: 180px;
+}
+
+.thr746AgendaDesc {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  width: 380px;
+  display: grid;
+  grid-auto-flow: row;
+  height: fit-content;
+}
+
+.thr746AgendaTitle {
+  margin: 80px 0 55px 0px;
+  font-weight: 300;
+  font-size: 80px;
+  letter-spacing: 1.4px;
+}
+
+.thr746AgendaButtonWrapper {
+  margin-top: 60px;
+}
+
+.thr746Timeline {
+  display: grid;
+  height: fit-content;
+  position: relative;
+  margin-top: 20px;
+  width: 380px;
+}
+
+.thr746AgendaCointainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 40px;
+  width: 392px;
+  height: fit-content;
+  border-left: 1px solid var(--primaryClr);
+  padding-bottom: 40px;
+}
+
+.thr746Timeline .thr746AgendaCointainer:last-child {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 40px;
+  width: 392px;
+  height: fit-content;
+  padding-bottom: 40px;
+  border: none;
+}
+
+.thr746AgendaCircle {
+  width: 7px;
+  height: 7px;
+  background: var(--constantText120);
+  border-radius: 50%;
+  margin: 0 0 0 -4px;
+}
+
+.thr746Timeline .thr746AgendaCointainer:last-child .thr746AgendaCircle {
+  width: 7px;
+  height: 7px;
+  background: var(--constantText120);
+  border-radius: 50%;
+  margin: 0 0 0 -3px;
+}
+
+.thr746AgendaTime {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-top: -5px;
+}
+
+.thr746AgendaSpeech {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.thr746TalkTagBlue {
+  height: 26px;
+  font-weight: 400;
+  background: var(--secondaryClr30);
+  font-size: 14px;
+  margin: 0 0 0 8px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: var(--secondaryClr);
+}
+
+.thr746TalkTagGreen {
+  height: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 0 8px;
+  padding: 4px 8px;
+  background: var(--primaryClr10);
+  border-radius: 3px;
+  color: var(--primaryClr);
+}

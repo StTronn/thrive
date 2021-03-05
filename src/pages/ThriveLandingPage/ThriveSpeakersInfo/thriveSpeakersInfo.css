@@ -1,0 +1,101 @@
+.thr746Speaker {
+  background: var(--constantText120);
+  display: grid;
+  justify-content: center;
+  row-gap: 40px;
+  padding-bottom: 40px;
+}
+
+.thr746SpeakerTitle {
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--constantWhite);
+}
+
+.thr746SpeakerDesc {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  color: var(--constantWhite);
+  width: 692px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.thr746SpeakerGrid {
+  display: grid;
+  column-gap: 40px;
+  padding: 40px 0 0 0;
+  row-gap: 40px;
+  grid-template-columns: auto auto auto;
+  width: fit-content;
+}
+
+.thr746SpeakerCard {
+  width: 280px;
+  height: 340px;
+  position: relative;
+  cursor: pointer;
+}
+
+.thr746SpeakerImage {
+  position: absolute;
+  width: 280px;
+  height: 340px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  background-size: cover;
+}
+
+.thr746SpeakerCard > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.thr746SpeakerCard:hover .thr746SpeakerImage {
+  height: 0;
+}
+
+.thr746SpeakerCard:hover .thr746SpeakerInfo {
+  opacity: 1;
+  height: 100%;
+}
+
+.thr746SpeakerInfo {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02px;
+  line-height: 24px;
+  color: var(--text);
+  background: var(--constantWhite);
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 0;
+  padding: 25px;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.thr746SpeakerName {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: var(--constantWhite);
+}
+
+.thr746SpeakerPos {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: var(--constantWhite);
+}

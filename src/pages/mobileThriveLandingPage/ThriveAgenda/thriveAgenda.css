@@ -1,0 +1,124 @@
+.thrm746Agenda {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  margin-bottom: 40px;
+}
+
+.thrm746AgendaDesc {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 21px;
+  width: 380px;
+  display: grid;
+  grid-auto-flow: row;
+  height: fit-content;
+}
+
+.thrm746AgendaTitle {
+  margin: 40px 0 40px 0px;
+  font-weight: 300;
+  font-size: 36px;
+  letter-spacing: 1.4px;
+}
+
+.thrm746AgendaDesc {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  width: auto;
+  margin: 0 0 80px 0;
+}
+
+.thrm746AgendaButtonWrapper {
+  margin: 60px 0 0 0;
+}
+
+.thrm746Timeline {
+  display: grid;
+  height: fit-content;
+  position: relative;
+}
+
+.thrm746AgendaCointainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 40px;
+  height: fit-content;
+  border-left: 1px solid var(--primaryClr);
+  padding-bottom: 40px;
+}
+
+.thrm746Timeline .thrm746AgendaCointainer:last-child {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 40px;
+  height: fit-content;
+  padding-bottom: 40px;
+  border: none;
+}
+
+.thrm746Timeline .thrm746AgendaCointainer:last-child .thrm746AgendaCircle {
+  width: 7px;
+  height: 7px;
+  background: var(--text);
+  border-radius: 50%;
+  margin: 0 0 0 -3px;
+}
+
+.thrm746AgendaCircle {
+  width: 7px;
+  height: 7px;
+  background: var(--text);
+  border-radius: 50%;
+  margin: 0 0 0 -4px;
+}
+
+.thrm746AgendaCircleLast {
+  width: 7px;
+  height: 7px;
+  background: var(--text);
+  border-radius: 50%;
+  margin: 0 0 0 -3px;
+}
+
+.thrm746AgendaTime {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: -3px;
+  letter-spacing: 0.02px;
+}
+
+.thrm746AgendaSpeech {
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.thrm746TalkTagBlue {
+  height: 26px;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 0 0 8px;
+  padding: 4px 8px;
+  background:var(--secondaryClr30);
+  border-radius: 3px;
+  color: var(--secondaryClr);
+}
+
+.thrm746TalkTagGreen {
+  height: 26px;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 0 0 8px;
+  padding: 4px 8px;
+  background: var(--primaryClr10);
+  border-radius: 3px;
+  color: var(--primaryClr);
+}
+.thrm746AgendaLink {
+  font-weight: 500;
+  color: var(--primaryClr);
+}

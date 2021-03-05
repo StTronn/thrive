@@ -1,0 +1,19 @@
+.thrm746Details {
+  width: 100%;
+  background: var(--constantText120);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.thrm746DetailsGrid {
+  display: grid;
+  column-gap: 140px;
+  row-gap: 50px;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed var(--border);
+}
+

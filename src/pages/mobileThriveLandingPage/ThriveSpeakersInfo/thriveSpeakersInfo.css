@@ -1,0 +1,99 @@
+.thrm746Speaker {
+  background: var(--constantText120);
+  display: grid;
+  justify-content: center;
+  row-gap: 40px;
+  padding: 0 15px;
+}
+
+.thrm746SpeakerTitle {
+  font-weight: 300;
+  font-size: 36px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--constantWhite);
+}
+.thrm746SpeakerTitlePadding {
+  padding-top: 10px;
+}
+.thrm746SpeakerGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  padding: 40px 0 0 0;
+  row-gap: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.thrm746SpeakerCard {
+  width: 156px;
+  height: 190px;
+  position: relative;
+  cursor: pointer;
+}
+
+.thrm746SpeakerCard > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.thrm746SpeakerImage {
+  position: absolute;
+  width: 156px;
+  height: 190px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+/* .thrm746SpeakerCard:hover .thrm746SpeakerImage {
+  height: 0;
+}
+
+.thrm746SpeakerCard:hover .thrm746SpeakerInfo {
+  opacity: 1;
+} */
+
+.thrm746SpeakerInfo {
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0.12px;
+  color: var(--constantWhite);
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition-property: all;
+  transition-duration: 1.9s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.thrm746SpeakerDesc {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: var(--constantWhite);
+}
+.thrm746SpeakerName {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.12px;
+  color: var(--constantWhite);
+}
+
+.thrm746SpeakerPos {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.12px;
+  color: var(--constantWhite);
+}

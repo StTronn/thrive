@@ -1,0 +1,22 @@
+.thr746Details {
+  width: 100%;
+  background: var(--constantText120);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.thr746DetailsGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 140px;
+  row-gap: 50px;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 60px;
+  border-bottom: 1px dashed var(--subText10);
+}
+
+.thr746DetailsOneK {
+  margin-top: 20px;
+}
