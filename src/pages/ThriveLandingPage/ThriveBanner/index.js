@@ -29,7 +29,7 @@ const Banner = ({
       { threshold: [1, 0.85] }
     );
     if (bannerRef.current)
-    observer.observe(bannerRef.current);
+      observer.observe(bannerRef.current);
     return () => {
       observer.disconnect();
     };
@@ -42,14 +42,14 @@ const Banner = ({
 
   return (
     <div className="thr746Header thr746FullScreen" ref={bannerRef}>
-      {loading && <Loading/>}
+      {loading && <Loading />}
       <video src={ThriveVideo} loop muted autoplay="autoplay"
         onLoadedData={() => { setLoading(false) }}
       >
       </video>
-      <div className="thr746Nav web-align thr746FadeInUp">
+      <div className="thr746Nav web-align">
         <Image width={150} src={Logo} alt="logo" />
-        <div className="thr746BannerSection thr746FadeInUp">
+        <div className="thr746BannerSection">
           <span onClick={scrollDesc}>ABOUT THRIVE</span>
           <span onClick={scrollSpeakers}>SPEAKERS</span>
           <span onClick={scrollAgenda}>AGENDA</span>

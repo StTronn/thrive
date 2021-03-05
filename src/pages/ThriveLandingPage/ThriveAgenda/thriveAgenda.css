@@ -75,22 +75,22 @@
 }
 
 .thr746AgendaTime {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.2px;
   margin-top: -5px;
 }
 
 .thr746AgendaSpeech {
-  font-size: 16px;
-  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 0.02px;
+  margin-top: 12px;
 }
 
 .thr746TalkTagBlue {
   height: 26px;
   font-weight: 400;
   background: var(--secondaryClr30);
-  font-size: 14px;
+  font-size: 12px;
   margin: 0 0 0 8px;
   padding: 4px 8px;
   border-radius: 3px;
@@ -99,7 +99,7 @@
 
 .thr746TalkTagGreen {
   height: 26px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   margin: 0 0 0 8px;
   padding: 4px 8px;
