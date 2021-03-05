@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { Suspense, useRef } from "react";
 
-import  Button  from "../../ui/Button";
-import  Image from "../../common/Image";
-import AnchorLink  from "../../common/AnchorLink";
+import Button from "../../ui/Button";
+import Image from "../../common/Image";
+import AnchorLink from "../../common/AnchorLink";
 
 import Banner from "./ThriveBanner";
 import Description from "./ThriveDescription";
 import Details from "./ThriveDetails";
-import SpeakersInfo from "./ThriveSpeakersInfo";
+//import SpeakersInfo from "./ThriveSpeakersInfo";
 import ThriveAgenda from "./ThriveAgenda";
 
 import LetsThrive from "./images/lets-thrive.svg";
@@ -17,6 +17,8 @@ import LinkedinIcon from "./images/linkedin.svg";
 import FooterLogo from "./images/footer-logo.svg";
 
 import "./thriveLandingPage.css";
+
+const SpeakersInfo = React.lazy(() => import('./ThriveSpeakersInfo'));
 
 const ThriveLandingPage = () => {
   const descRef = useRef();
@@ -47,7 +49,9 @@ const ThriveLandingPage = () => {
       />
       <Description descRef={descRef} getThriveInvite={getThriveInvite} />
       <Details detailsRef={detailsRef} />
-      <SpeakersInfo speakersRef={speakersRef} />
+      <Suspense fallback={<Loading />}>
+        <SpeakersInfo speakersRef={speakersRef} />
+      </Suspense>
       <ThriveAgenda agendaRef={agendaRef} getThriveInvite={getThriveInvite} />
       <ThriveBottom />
     </>
@@ -113,5 +117,11 @@ const getThriveInvite = () => {
   window.open(thriveInviteLink, "_blank");
 };
 
+const Loading = () => {
+  return (
+    <div className="thr746Loading">
+    </div>
+  )
+}
 
 export default ThriveLandingPage;
