@@ -1,6 +1,5 @@
 .thrm746Header {
-  background: var(--constantText120);
-  background: url('../images/thrive-front.svg');
+  background:var(--constantText120) url('../images/thrive-front.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
